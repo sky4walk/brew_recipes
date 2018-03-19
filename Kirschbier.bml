@@ -1,14 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-<description>Maisbier
+<description>Kirschbier
 16L Hauptguss
 8L Nachguss
-Rohfruchtmaische: 
-1,5kg zerkleinerter Maisbier
-1,0kg zerkleinerter Reis
-in 10L Wasser bei 40°C einmaischen 
-langsam zum Kochen bringen und 30min halten
-abkühlen über Nacht
+2,8kg Pilsner Malz
+0,33kg Weizenmalz
+0,66kg Weizenrohfrucht
+0,33kg Sauermalz
+
+0,3L Kirschsirup
+0,33g Laktose
+2 Tonkabohnen
+0,660kg Kirschen
+
+23g Perle (7,8%)
 </description>
   <rast>
     <Nr>0</Nr>
@@ -16,7 +21,7 @@ abkühlen über Nacht
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>52.0</SollTemp>
+    <SollTemp>55.0</SollTemp>
     <Time>0</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
@@ -26,10 +31,7 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Schuettung
-3,5kg Pilsener Malz
-2,5kg Rohfruchtmaische
-</Info>
+    <Info>16L Hauptguss</Info>
   </rast>
   <rast>
     <Nr>1</Nr>
@@ -37,8 +39,8 @@ abkühlen über Nacht
     <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>52.0</SollTemp>
-    <Time>30</Time>
+    <SollTemp>55.0</SollTemp>
+    <Time>5</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -47,16 +49,20 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>Verkleistert Staerke</Info>
+    <Info>2,8kg Pilsner Malz
+0,33kg Weizenmalz
+0,66kg Weizenrohfrucht zerkleinert
+0,33kg Sauermalz
+	</Info>
   </rast>
   <rast>
     <Nr>2</Nr>
-    <Name>Maltoserast</Name>
+    <Name>Kombirast</Name>
     <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>63.0</SollTemp>
-    <Time>100</Time>
+    <SollTemp>67.0</SollTemp>
+    <Time>70</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -65,16 +71,16 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>alpha Amylase. Erzeugt Maltose Zucker zur Gärung</Info>
+    <Info>Kombirast: Maltoserast und Verzuckerung in einem bis Jod-Normal</Info>
   </rast>
   <rast>
     <Nr>3</Nr>
-    <Name>Verzuckerung</Name>
+    <Name>Laeuterrruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>72.0</SollTemp>
-    <Time>45</Time>
+    <SollTemp>76.0</SollTemp>
+    <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -83,9 +89,7 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>beta-Amylase. Erzeugt Dextrose zur Vollmundigkeit. 
-	Jodprobe, bei Jod-Normal (keine Staerke mehr vorhanden) weiter. 
-	Ansonsten so lange die Rast halten bis Jod-Normal</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>4</Nr>
@@ -93,8 +97,8 @@ abkühlen über Nacht
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>78.0</SollTemp>
-    <Time>10</Time>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -103,72 +107,79 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>Wuerze messen mit Bierspindel oder Refraktometer</Info>
+    <Info>Vorderwürzehopfung: 23g Hopfen Perl ein den Laeutereimer legen und darauf laeutern
+	Anschwaenzen: die ersten Liter bis es hell rauskommt wieder 
+	zurueckgeben dmait sich der Filter bildet; 8L Nachguss oder so lange Nachguss, 
+	bis die gewuenschte Stammwürze erreicht ist
+	</Info>
   </rast>
   <rast>
     <Nr>5</Nr>
-    <Name>Laeuterruhe</Name>
+    <Name>Kochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
+    <SollTemp>99.0</SollTemp>
+    <Time>70</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Anschwaenzen: die ersten Liter bis es hell rauskommt wieder 
-	zurueckgeben dmait sich der Filter bildet; 6L Nachguss oder so lange Nachguss, 
-	bis die gewuenschte Stammwürze erreicht ist</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>6</Nr>
-    <Name>Bitterhopfen</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
-    <SollTemp>99.0</SollTemp>
-    <Time>60</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info>5,5g Hallertauer mittelfrüh Typ 90 3,4%</Info>
-  </rast>
-   <rast>
-    <Nr>7</Nr>
-    <Name>Nachkochen</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
-    <SollTemp>99.0</SollTemp>
-    <Time>10</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info>evtl. etwas heisses Wasser nachgiessen, um Aufzufuellen</Info>
-  </rast>
-  <rast>
-    <Nr>9</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>0.0</SollTemp>
     <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>Kirschsirup in die Wuerze geben.
+	kräftig umruehren und absetzen lassen, so dass ein Strudel  entsteht</Info>
+  </rast>
+   <rast>
+    <Nr>7</Nr>
+    <Name>Filtern</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>durch einen Filterstrumpf in den Gärbottich filtern. 
+	2L Speise entnehmen und evtl einfrieren
+	mit Hefe: Mangrove Jack's M44 US West Coast ansetzen
+	nach der Hauptgaerung Kirschen dazu geben.
+	</Info>
+  </rast>
+  <rast>
+    <Nr>9</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -177,15 +188,12 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>kräftig umruehren und absetzen lassen;
-    2l Speise entnehmen, Speise und Wuerze
-    abkuehlen lassen und dann 11g   Hefe S-04 bei 30C anstellen
-    von der Speise Stammwuerze messen und nach Ende der Gaerung oder 7g/L Zucker.
+    <Info>
     </Info>
   </rast>
   <rast>
     <Nr>10</Nr>
-    <Name>Rast11</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -203,7 +211,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>11</Nr>
-    <Name>Rast12</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -221,7 +229,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>12</Nr>
-    <Name>Rast13</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -239,7 +247,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>13</Nr>
-    <Name>Rast14</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -257,7 +265,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>14</Nr>
-    <Name>Rast15</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -275,7 +283,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>15</Nr>
-    <Name>Rast16</Name>
+    <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
