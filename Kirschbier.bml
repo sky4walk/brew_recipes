@@ -4,14 +4,14 @@
 16L Hauptguss
 8L Nachguss
 2,8kg Pilsner Malz
-0,33kg Weizenmalz
-0,66kg Weizenrohfrucht
-0,33kg Sauermalz
+340g Weizenmalz
+700g Weizenrohfrucht fuer Schaumbildung
+300g Sauermalz fuer weicheres Wasser
 
-0,3L Kirschsirup
-0,33g Laktose
+340mL Kirschsirup
+340g Laktose
+700g Kirschen
 2 Tonkabohnen
-0,660kg Kirschen
 
 23g Perle (7,8%)
 </description>
@@ -50,9 +50,9 @@
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
     <Info>2,8kg Pilsner Malz
-0,33kg Weizenmalz
-0,66kg Weizenrohfrucht zerkleinert
-0,33kg Sauermalz
+340g Weizenmalz
+700g Weizenrohfrucht zerkleinert
+340g Sauermalz
 	</Info>
   </rast>
   <rast>
@@ -133,12 +133,12 @@
   </rast>
   <rast>
     <Nr>6</Nr>
-    <Name>Whirlpool</Name>
+    <Name>Milchzucker</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
+    <SollTemp>99.0</SollTemp>
+    <Time>15</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -147,12 +147,11 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Kirschsirup in die Wuerze geben.
-	kräftig umruehren und absetzen lassen, so dass ein Strudel  entsteht</Info>
+    <Info>340g Milchzucker hinzugeben zur Suessung, 2 Tonkabohnen zerkleiner hinzufügen fuer Vanillearoma</Info>
   </rast>
    <rast>
     <Nr>7</Nr>
-    <Name>Filtern</Name>
+    <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -166,20 +165,18 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>durch einen Filterstrumpf in den Gärbottich filtern. 
-	2L Speise entnehmen und evtl einfrieren
-	mit Hefe: Mangrove Jack's M44 US West Coast ansetzen
-	nach der Hauptgaerung Kirschen dazu geben.
+    <Info>Kirschsirup in die Wuerze geben.
+	kräftig umruehren und absetzen lassen, so dass ein Strudel  entsteht
 	</Info>
   </rast>
    <rast>
     <Nr>8</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Name>Filtern</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
+    <Time>0</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -188,7 +185,10 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>
+    <Info>durch einen Filterstrumpf in den Gärbottich filtern. 
+	2L Speise entnehmen und evtl einfrieren
+	mit Hefe: Mangrove Jack's M44 US West Coast ansetzen
+	nach der Hauptgaerung Kirschen dazu geben.
     </Info>
   </rast>
   <rast>
