@@ -76,9 +76,9 @@
   <rast>
     <Nr>3</Nr>
     <Name>Abmaischen</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>76.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
