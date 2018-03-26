@@ -62,7 +62,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>67.0</SollTemp>
-    <Time>70</Time>
+    <Time>75</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -76,9 +76,9 @@
   <rast>
     <Nr>3</Nr>
     <Name>Abmaischen</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>76.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
@@ -98,7 +98,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
+    <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -109,7 +109,7 @@
     <MaxGradient>1.0</MaxGradient>
     <Info>Vorderwürzehopfung: 23g Hopfen Perl ein den Laeutereimer legen und darauf laeutern
 	Anschwaenzen: die ersten Liter bis es hell rauskommt wieder 
-	zurueckgeben dmait sich der Filter bildet; 8L Nachguss oder so lange Nachguss, 
+	zurueckgeben damit sich der Filter bildet; 8L Nachguss oder so lange Nachguss, 
 	bis die gewuenschte Stammwürze erreicht ist
 	</Info>
   </rast>
