@@ -165,7 +165,7 @@ abkühlen über Nacht
     <Info>evtl. etwas heisses Wasser nachgiessen, um Aufzufuellen</Info>
   </rast>
   <rast>
-    <Nr>9</Nr>
+    <Nr>8</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -187,8 +187,26 @@ abkühlen über Nacht
     </Info>
   </rast>
   <rast>
+    <Nr>9</Nr>
+    <Name>Rast</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
     <Nr>10</Nr>
-    <Name>Rast11</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -206,7 +224,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>11</Nr>
-    <Name>Rast12</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -224,7 +242,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>12</Nr>
-    <Name>Rast13</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -242,7 +260,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>13</Nr>
-    <Name>Rast14</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -260,7 +278,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>14</Nr>
-    <Name>Rast15</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
@@ -278,7 +296,7 @@ abkühlen über Nacht
   </rast>
   <rast>
     <Nr>15</Nr>
-    <Name>Rast16</Name>
+    <Name>Rast</Name>
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
