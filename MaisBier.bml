@@ -1,14 +1,17 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
 <description>Maisbier
-16L Hauptguss
-8L Nachguss
-Rohfruchtmaische: 
-1,5kg zerkleinerter Maisbier
+1. Maische -Rohfruchtmaische: 
+1,5kg zerkleinerter Mais
 1,0kg zerkleinerter Reis
 in 10L Wasser bei 40°C einmaischen 
 langsam zum Kochen bringen und 30min halten
 abkühlen über Nacht
+2. Maische
+16L Hauptguss
+8L Nachguss
+3,5kg Pilsener Malz
+2,5kg Rohfruchtmasiche aus 1
 </description>
   <rast>
     <Nr>0</Nr>
