@@ -77,7 +77,7 @@ abkühlen über Nacht
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>72.0</SollTemp>
-    <Time>45</Time>
+    <Time>55</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>2.0</Kp>
@@ -88,7 +88,8 @@ abkühlen über Nacht
     <MaxGradient>1.0</MaxGradient>
     <Info>beta-Amylase. Erzeugt Dextrose zur Vollmundigkeit. 
 	Jodprobe, bei Jod-Normal (keine Staerke mehr vorhanden) weiter. 
-	Ansonsten so lange die Rast halten bis Jod-Normal</Info>
+	Ansonsten so lange die Rast halten bis Jod-Normal. Staerke war imme rnoch vorhanden.
+	hab trotzdem weitergemacht, da staerkehaltige Frucht immer noch Staerke enthaelt.</Info>
   </rast>
   <rast>
     <Nr>4</Nr>
@@ -126,7 +127,7 @@ abkühlen über Nacht
     <MaxGradient>0.0</MaxGradient>
     <Info>Anschwaenzen: die ersten Liter bis es hell rauskommt wieder 
 	zurueckgeben dmait sich der Filter bildet; 6L Nachguss oder so lange Nachguss, 
-	bis die gewuenschte Stammwürze erreicht ist</Info>
+	bis die gewuenschte Stammwürze erreicht ist. Aufgefuellt bis 12°P</Info>
   </rast>
   <rast>
     <Nr>6</Nr>
@@ -144,7 +145,7 @@ abkühlen über Nacht
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>5,5g Hallertauer mittelfrüh Typ 90 3,4%</Info>
+    <Info>40g Perle 7%</Info>
   </rast>
    <rast>
     <Nr>7</Nr>
