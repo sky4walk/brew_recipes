@@ -8,8 +8,8 @@ in 10L Wasser bei 40°C einmaischen
 langsam zum Kochen bringen und 30min halten
 abkühlen über Nacht
 2. Maische
-16L Hauptguss
-8L Nachguss
+10L Hauptguss (10L von erster Maische kommen dann noch hinzu)
+6L Nachguss
 3,5kg Pilsener Malz
 2,5kg Rohfruchtmasiche aus 1
 </description>
@@ -31,7 +31,7 @@ abkühlen über Nacht
     <MaxGradient>0.0</MaxGradient>
     <Info>Schuettung
 3,5kg Pilsener Malz
-2,5kg Rohfruchtmaische
+2,5kg Rohfruchtmaische (10L)
 </Info>
   </rast>
   <rast>
