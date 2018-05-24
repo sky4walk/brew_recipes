@@ -7,6 +7,7 @@
 850g Weizenmalz
 150g Sauermalz
 
+15g Hopfen (10%)
 25g Tettnanger (4,2%)
 20g Hanfspitzen
 5g Zucker/Liter
@@ -144,11 +145,29 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>15g Tettnanger Hopfen</Info>
+    <Info>15g Hopfen (10%) nach 20Min zugeben</Info>
   </rast>
    <rast>
     <Nr>7</Nr>
     <Name>Aromahopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>50</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>25g Tettnanger (4,2%) nach 50Min zugeben</Info>
+  </rast>
+   <rast>
+    <Nr>8</Nr>
+    <Name>Hanf</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -162,40 +181,19 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
-  </rast>
-   <rast>
-    <Nr>8</Nr>
-    <Name>Hanf</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info>durch einen Filterstrumpf in den Gärbottich filtern. 
-	2L Speise entnehmen und evtl einfrieren
-	mit Hefe: Mangrove Jack's M44 US West Coast ansetzen
-	nach der Hauptgaerung Kirschen dazu geben.
+    <Info>
     </Info>
   </rast>
   <rast>
     <Nr>9</Nr>
-    <Name>Filtern</Name>
+    <Name>Nachkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>0.0</SollTemp>
+    <SollTemp>99.0</SollTemp>
     <Time>10</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
@@ -207,10 +205,10 @@
   </rast>
   <rast>
     <Nr>10</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Name>Whirlpool</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>0.0</SollTemp>
     <Time>0</Time>
     <MinTemp>0.0</MinTemp>
@@ -221,7 +219,12 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
+    <Info>
+	Whirlpool erzeugen durch Rühren.
+	Nach 10Min Durch einen Filterstrumpf in den Gärbottich filtern. 
+	2L Speise entnehmen. Sobald Würze kalt ist 
+	Hefe Danstar Nottingham Ale ansetzen
+	</Info>
   </rast>
   <rast>
     <Nr>11</Nr>
