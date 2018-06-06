@@ -56,8 +56,8 @@
     <Nr>2</Nr>
     <Name>Maltoserast</Name>
     <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>62.0</SollTemp>
     <Time>45</Time>
     <MinTemp>-0.1</MinTemp>
@@ -73,9 +73,9 @@
   <rast>
     <Nr>3</Nr>
     <Name>Verzuckerungsrast</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>71.0</SollTemp>
     <Time>45</Time>
     <MinTemp>-0.1</MinTemp>
@@ -86,14 +86,14 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info></Info>
+    <Info>bis Jodnormal Rast halten</Info>
   </rast>
   <rast>
     <Nr>4</Nr>
     <Name>Abmaischen</Name>
     <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>78.0</SollTemp>
     <Time>5</Time>
     <MinTemp>-0.1</MinTemp>
@@ -104,7 +104,7 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>bis Jodnormal Rast halten
+    <Info>
 	</Info>
   </rast>
   <rast>
@@ -210,7 +210,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
+    <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
