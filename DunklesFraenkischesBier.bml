@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
+<description>Dunkles fraenkisches Bier
+16L Hauptguss
+8L Nachguss
+2,10kg Pilsener Malz
+1,90kg Münchner Malz
+0,24kg Karamellmalz (20-30EBC)
+0,03kg Röstmalz (1100-1200 EBC)
+0,15kg Sauermalz
+
+ 9,4g nordbrauer  9,7%
+33,8g hallertauer 5,3%
+
+Wyest 2308 Munich Lager 
+2L Speise 
+
+Hauptgärung 2 Wochen 10°C
+Reifung 5 Wochen 10°C
+
+</description>
+  <rast>
+    <Nr>0</Nr>
+    <Name>Einmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>40.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>16L Hauptguss</Info>
+  </rast>
+  <rast>
+    <Nr>1</Nr>
+    <Name>Eiweissrast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>50.0</SollTemp>
+    <Time>30</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	2,10kg Pilsener Malz
+    1,90kg Münchner Malz
+    0,24kg Karamellmalz (20-30EBC)
+    0,15kg Sauermalz
+	</Info>
+  </rast>
+  <rast>
+    <Nr>2</Nr>
+    <Name>Maltoserast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>62.0</SollTemp>
+    <Time>40</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>3</Nr>
+    <Name>Verzuckerungsrast 1</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>72.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	0,03kg Röstmalz (1100-1200 EBC)
+	hinzugeben
+	</Info>
+  </rast>
+  <rast>
+    <Nr>4</Nr>
+    <Name>Verzuckerungsrast 2</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>72.0</SollTemp>
+    <Time>30</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>	
+	bis Jodnormal Rast halten
+	</Info>
+  </rast>
+  <rast>
+    <Nr>5</Nr>
+    <Name>Abmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>76.0</SollTemp>
+    <Time>5</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	Rührgeraet ausschalten und abbauen
+	</Info>
+  </rast>
+  <rast>
+    <Nr>6</Nr>
+    <Name>Läuterruhe</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info> 
+	Auswaschen Zucker aus Treber
+	Anschwaenzen: die ersten Liter zurückgeben bis hell wird.
+	Danach ca 8L Nachguss zugeben oder so lange Nachguss, 
+	bis die gewuenschte Stammwürze erreicht ist
+	</Info>
+  </rast>
+  <rast>
+    <Nr>7</Nr>
+    <Name>Bitter und Aromahopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	 9,4g Nordbrauer  9,7%
+    33,8g Hallertauer 5,3%
+	</Info>
+  </rast>
+   <rast>
+    <Nr>8</Nr>
+    <Name>Nachkochen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>80</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+   <rast>
+    <Nr>9</Nr>
+    <Name>Whirlpool</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	Whirlpool erzeugen durch Rühren.
+	Nach 10Min Durch einen Filterstrumpf in den Gärbottich filtern. 
+	2L Speise entnehmen. Sobald Würze kalt ist 
+	Hefe Wyest 2308 Munich Lager ansetzen
+	Gärung und Reifung bei 10°C
+    </Info>
+  </rast>
+  <rast>
+    <Nr>10</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>99.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    </Info>
+  </rast>
+  <rast>
+    <Nr>11</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>12</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>13</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>14</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>15</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+</recipe>
