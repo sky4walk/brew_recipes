@@ -50,7 +50,7 @@ Gärung 10°C 3 Wochen
     <Time>45</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -75,7 +75,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -90,11 +90,11 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>15</SollTemp>
+    <SollTemp>72</SollTemp>
     <Time>15</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -107,6 +107,25 @@ Sauermalz 0,3kg (3-6 EBC)
   </rast>
   <rast>
     <Nr>4</Nr>
+    <Name>Abmaischen</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>78</SollTemp>
+    <Time>10</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>5</Nr>
     <Name>Läuterruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -127,7 +146,7 @@ Sauermalz 0,3kg (3-6 EBC)
 	</Info>
   </rast>
   <rast>
-    <Nr>5</Nr>
+    <Nr>6</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -147,7 +166,7 @@ Sauermalz 0,3kg (3-6 EBC)
 	</Info>
   </rast>
   <rast>
-    <Nr>6</Nr>
+    <Nr>7</Nr>
     <Name>Flavour Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -167,7 +186,7 @@ Sauermalz 0,3kg (3-6 EBC)
 	</Info>
   </rast>
   <rast>
-    <Nr>7</Nr>
+    <Nr>8</Nr>
     <Name>Aroma Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -187,7 +206,7 @@ Sauermalz 0,3kg (3-6 EBC)
 	</Info>
   </rast>
    <rast>
-    <Nr>8</Nr>
+    <Nr>9</Nr>
     <Name>Nachkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -205,7 +224,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <Info></Info>
   </rast>
    <rast>
-    <Nr>9</Nr>
+    <Nr>10</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -224,7 +243,7 @@ Sauermalz 0,3kg (3-6 EBC)
     </Info>
   </rast>
   <rast>
-    <Nr>10</Nr>
+    <Nr>11</Nr>
     <Name>Filtern</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -243,7 +262,7 @@ Sauermalz 0,3kg (3-6 EBC)
     </Info>
   </rast>
   <rast>
-    <Nr>11</Nr>
+    <Nr>12</Nr>
     <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
@@ -260,24 +279,6 @@ Sauermalz 0,3kg (3-6 EBC)
     <MaxGradient>0.0</MaxGradient>
     <Info>
 	</Info>
-  </rast>
-  <rast>
-    <Nr>12</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
   </rast>
   <rast>
     <Nr>13</Nr>
