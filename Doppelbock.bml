@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-<description>Dunkles fraenkisches Bier
+  <description>Dunkles fraenkisches Bier
 Wasser:
-32L Hauptguss
-16L Nachguss
+45L Hauptguss
+20L Nachguss
 Malz:
 Bei Sudhausausbeute 70%
 Pilsner 4,8kg (3-5 EBC)
@@ -90,7 +90,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>72</SollTemp>
+    <SollTemp>72.0</SollTemp>
     <Time>15</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
@@ -109,9 +109,9 @@ Sauermalz 0,3kg (3-6 EBC)
     <Nr>4</Nr>
     <Name>Abmaischen</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
-    <SollTemp>78</SollTemp>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>78.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
@@ -130,7 +130,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
@@ -139,7 +139,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>	
 	Am Ende Ablaeutern, Anschwaenzen und Ueberschwaenzen mit ca 16L
 	Spindelmessung
@@ -160,7 +160,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>
 	Taurus 16g
 	</Info>
@@ -171,7 +171,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98</SollTemp>
+    <SollTemp>98.0</SollTemp>
     <Time>45</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
@@ -205,7 +205,7 @@ Sauermalz 0,3kg (3-6 EBC)
     Smaragd 14g
 	</Info>
   </rast>
-   <rast>
+  <rast>
     <Nr>9</Nr>
     <Name>Nachkochen</Name>
     <On>true</On>
@@ -223,13 +223,13 @@ Sauermalz 0,3kg (3-6 EBC)
     <MaxGradient>0.0</MaxGradient>
     <Info></Info>
   </rast>
-   <rast>
+  <rast>
     <Nr>10</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>30</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
@@ -248,10 +248,10 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>false</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>1</Time>
-    <MinTemp>0</MinTemp>
-    <MaxTemp>0</MaxTemp>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
