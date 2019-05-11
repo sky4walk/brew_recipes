@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-<description>Dunkles fraenkisches Bier
+  <description>Dunkles fraenkisches Bier
 Wasser:
-32L Hauptguss
-16L Nachguss
+45L Hauptguss
+20L Nachguss
 Malz:
 Bei Sudhausausbeute 70%
 Pilsner 4,8kg (3-5 EBC)
@@ -50,7 +50,7 @@ Gärung 10°C 3 Wochen
     <Time>45</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -75,7 +75,7 @@ Sauermalz 0,3kg (3-6 EBC)
     <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -90,11 +90,11 @@ Sauermalz 0,3kg (3-6 EBC)
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>15</SollTemp>
+    <SollTemp>72.0</SollTemp>
     <Time>15</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -107,11 +107,30 @@ Sauermalz 0,3kg (3-6 EBC)
   </rast>
   <rast>
     <Nr>4</Nr>
+    <Name>Abmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>78.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>2.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>5</Nr>
     <Name>Läuterruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
@@ -120,14 +139,14 @@ Sauermalz 0,3kg (3-6 EBC)
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>	
 	Am Ende Ablaeutern, Anschwaenzen und Ueberschwaenzen mit ca 16L
 	Spindelmessung
 	</Info>
   </rast>
   <rast>
-    <Nr>5</Nr>
+    <Nr>6</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -141,18 +160,18 @@ Sauermalz 0,3kg (3-6 EBC)
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>
 	Taurus 16g
 	</Info>
   </rast>
   <rast>
-    <Nr>6</Nr>
+    <Nr>7</Nr>
     <Name>Flavour Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98</SollTemp>
+    <SollTemp>98.0</SollTemp>
     <Time>45</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
@@ -167,7 +186,7 @@ Sauermalz 0,3kg (3-6 EBC)
 	</Info>
   </rast>
   <rast>
-    <Nr>7</Nr>
+    <Nr>8</Nr>
     <Name>Aroma Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -186,8 +205,8 @@ Sauermalz 0,3kg (3-6 EBC)
     Smaragd 14g
 	</Info>
   </rast>
-   <rast>
-    <Nr>8</Nr>
+  <rast>
+    <Nr>9</Nr>
     <Name>Nachkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -204,13 +223,13 @@ Sauermalz 0,3kg (3-6 EBC)
     <MaxGradient>0.0</MaxGradient>
     <Info></Info>
   </rast>
-   <rast>
-    <Nr>9</Nr>
+  <rast>
+    <Nr>10</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>30</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
@@ -224,15 +243,15 @@ Sauermalz 0,3kg (3-6 EBC)
     </Info>
   </rast>
   <rast>
-    <Nr>10</Nr>
+    <Nr>11</Nr>
     <Name>Filtern</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>false</Call>
-    <SollTemp>1</SollTemp>
+    <SollTemp>1.0</SollTemp>
     <Time>1</Time>
-    <MinTemp>0</MinTemp>
-    <MaxTemp>0</MaxTemp>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
@@ -243,7 +262,7 @@ Sauermalz 0,3kg (3-6 EBC)
     </Info>
   </rast>
   <rast>
-    <Nr>11</Nr>
+    <Nr>12</Nr>
     <Name>-</Name>
     <On>false</On>
     <Halt>false</Halt>
@@ -260,24 +279,6 @@ Sauermalz 0,3kg (3-6 EBC)
     <MaxGradient>0.0</MaxGradient>
     <Info>
 	</Info>
-  </rast>
-  <rast>
-    <Nr>12</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
   </rast>
   <rast>
     <Nr>13</Nr>
