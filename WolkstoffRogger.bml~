@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
+  <description>Wolkstoff Rogger
+Ausschlagmenge:  24L
+Sudhausausbeute: 60%
+Stammwürze:      13% 
+Farbe:           24IBU 
+Bitterheit:       7EBC 
+Alokohol:       5,1
+Wasser: HG 18L NG 9L
+Malz:
+2,0kg Roggenmalz 4-10 EBC
+2,0kg Pilsner Malz 2,5-4,5 EBC
+200g Pilsner Malz ungeschrotet
+500g kg Münchner I 20-25 EBC
+300gr CaraMünch 110-130 EBC
+200 g Sauer­malz, je nach Was­ser­här­te 2,5-12 EBC
+Hopfen:
+19gr Perle (AH, 10%)
+16gr Hallertauer mitfr. (AH, 8%)
+Hefe: S4
+Gärtemperatur:     12 °C
+Endvergärungsgrad: 76%
+Karbonisierung:    5 g/l 
+
+Enzymbooster Diastaseauszug: 
+200g ungeschrotetes Pilsner Malz in kaltem Wasser ueber nacht einweichen.
+
+</description>
+  <rast>
+    <Nr>0</Nr>
+    <Name>Aufheizen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>35.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>18L Hauptguss
+2kg geschrotetes Roggenmalz hinzugeben
+</Info>
+  </rast>
+  <rast>
+    <Nr>1</Nr>
+    <Name>Einmaischen</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>40.0</SollTemp>
+    <Time>30</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>	
+2,0kg Pilsner Malz 2,5-4,5 EBC
+500g kg Münchner I 20-25 EBC
+300gr CaraMünch 110-130 EBC
+200 g Sauer­malz, je nach Was­ser­här­te 2,5-12 EBC
+	</Info>
+  </rast>
+  <rast>
+    <Nr>2</Nr>
+    <Name>Eiweisrast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>55.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>3</Nr>
+    <Name>Maltoserast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>63.0</SollTemp>
+    <Time>30</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>4</Nr>
+    <Name>Verzuckerungsrast</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>72.0</SollTemp>
+    <Time>50</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>	
+Enzymbooster komplett hinzugeben.
+	Bei Jodnormal weiter
+	</Info>
+  </rast>
+  <rast>
+    <Nr>5</Nr>
+    <Name>Abmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>78.0</SollTemp>
+    <Time>20</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	
+	</Info>
+  </rast>
+  <rast>
+    <Nr>6</Nr>
+    <Name>Bitter Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info> 
+	19gr Perle
+	</Info>
+  </rast>
+  <rast>
+    <Nr>7</Nr>
+    <Name>Flavour Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>75</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    16gr Hallertauer mittelfrueh
+	</Info>
+  </rast>
+  <rast>
+    <Nr>8</Nr>
+    <Name>Nachkochen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>5</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>9</Nr>
+    <Name>Whirlpool</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>1.0</SollTemp>
+    <Time>20</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    </Info>
+  </rast>
+  <rast>
+    <Nr>10</Nr>
+    <Name>Filtern</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>false</Call>
+    <SollTemp>1.0</SollTemp>
+    <Time>1</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    </Info>
+  </rast>
+  <rast>
+    <Nr>11</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>12</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>13</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>14</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>15</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+</recipe>
