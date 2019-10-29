@@ -14,7 +14,6 @@ Malz:
 200g Pilsner Malz ungeschrotet
 500g kg Münchner I 20-25 EBC
 300gr CaraMünch 110-130 EBC
-200 g Sauer­malz, je nach Was­ser­här­te 2,5-12 EBC
 300g (5%) geschmacksneutrale Reishülsen 
 Hopfen:
 19gr Perle (AH, 10%)
@@ -52,8 +51,8 @@ Enzymbooster Diastaseauszug:
     <Nr>1</Nr>
     <Name>Einmaischen</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>40.0</SollTemp>
     <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
@@ -68,7 +67,7 @@ Enzymbooster Diastaseauszug:
 2,0kg Pilsner Malz 2,5-4,5 EBC
 500g kg Münchner I 20-25 EBC
 300gr CaraMünch 110-130 EBC
-200 g Sauer­malz, je nach Was­ser­här­te 2,5-12 EBC
+200 g evtl. Sauer­malz, je nach Was­ser­här­te 2,5-12 EBC 
 250g Reishuelsen hinzugeben
 	</Info>
   </rast>
@@ -79,7 +78,7 @@ Enzymbooster Diastaseauszug:
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>55.0</SollTemp>
-    <Time>10</Time>
+    <Time>20</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>1.0</Kp>
@@ -117,7 +116,7 @@ Enzymbooster Diastaseauszug:
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>72.0</SollTemp>
-    <Time>50</Time>
+    <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>0.0</Kp>
@@ -138,7 +137,7 @@ Enzymbooster komplett hinzugeben.
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>78.0</SollTemp>
-    <Time>20</Time>
+    <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>0.0</Kp>
@@ -178,7 +177,7 @@ Enzymbooster komplett hinzugeben.
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>75</Time>
+    <Time>60</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
