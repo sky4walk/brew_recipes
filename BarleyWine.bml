@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
+  <description>Barley Wine
+Ausschlagmenge:  15L
+Sudhausausbeute: 65%
+Stammwürze:      22% 
+Farbe:           40EBC 
+Bitterheit:      71IBU 
+Alokohol:        11%
+Wasser: HG 14,5L NG 8,5L
+Malz:
+Pale Ale Malz: 2.97kg
+Wiener Malz: 1.01kg
+Melanoidin: 180g
+Special B: 240g
+Pale Chocolate: 59g
+Gerstenflocken: 480g 
+Hopfen:
+Perle: 23 g, 10% α-Säure , 90 min
+Pacific Gem: 16 g, % α-Säure, 40 min
+Amarillo: 17 g, 6,1% α-Säure, 20 min
+Cascade: 16 g, 6,0% α-Säure, 20 min
+Perle: 20 g, 10% α-Säure, 10 min
+Candiszucker: 173 g für 90 min mitkochen
+Hefe: Wyeast Trappist 3787 High Gravity
+Gärtemperatur: 21 °C
+Karbonisierung: 5 g/l 
+
+</description>
+  <rast>
+    <Nr>0</Nr>
+    <Name>Aufheizen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>55.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>14,5L Hauptguss
+</Info>
+  </rast>
+  <rast>
+    <Nr>1</Nr>
+    <Name>Einmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>55.0</SollTemp>
+    <Time>5</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+Pale Ale Malz: 2.97kg
+Wiener Malz: 1.01kg
+Melanoidin: 180g
+Special B: 240g
+Pale Chocolate: 59g
+Gerstenflocken: 480g
+	</Info>
+  </rast>
+  <rast>
+    <Nr>2</Nr>
+    <Name>Eiweisrast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>63.0</SollTemp>
+    <Time>15</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>3</Nr>
+    <Name>Maltoserast</Name>
+    <On>true</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>68.0</SollTemp>
+    <Time>60</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>1.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>4</Nr>
+    <Name>Verzuckerungsrast</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>72.0</SollTemp>
+    <Time>15</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>	
+	Bei Jodnormal weiter
+	</Info>
+  </rast>
+  <rast>
+    <Nr>5</Nr>
+    <Name>Abmaischen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>78.0</SollTemp>
+    <Time>5</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>	
+	</Info>
+  </rast>
+  <rast>
+    <Nr>6</Nr>
+    <Name>Bitter Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info> 
+	23gr Perle
+	173g Kandiszucker
+	</Info>
+  </rast>
+  <rast>
+    <Nr>7</Nr>
+    <Name>Flavour Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>50</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    16gr Pacific Gem
+	</Info>
+  </rast>
+  <rast>
+    <Nr>8</Nr>
+    <Name>Aroma Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>20</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	17g Amarillo
+	16g Cascade
+	</Info>
+  </rast>
+  <rast>
+    <Nr>9</Nr>
+    <Name>Aroma Hopfen 2</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	20g Perle
+    </Info>
+  </rast>
+  <rast>
+    <Nr>10</Nr>
+    <Name>Nachkochen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+    </Info>
+  </rast>
+  <rast>
+    <Nr>11</Nr>
+    <Name>Whirlpool</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>12</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>13</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>14</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>15</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>0.0</SollTemp>
+    <Time>0</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+</recipe>
