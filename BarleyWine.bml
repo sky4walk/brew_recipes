@@ -17,9 +17,9 @@ Pale Chocolate: 59g
 Gerstenflocken: 480g 
 Hopfen:
 Perle: 23 g, 10% α-Säure , 90 min
-Pacific Gem: 16 g, % α-Säure, 40 min
-Amarillo: 17 g, 6,1% α-Säure, 20 min
-Cascade: 16 g, 6,0% α-Säure, 20 min
+Pacific Gem: 18 g, % α-Säure, 40 min
+Amarillo: 28 g, 6,1% α-Säure, 20 min
+Cascade: 14 g, 6,0% α-Säure, 20 min
 Perle: 20 g, 10% α-Säure, 10 min
 Candiszucker: 173 g für 90 min mitkochen
 Hefe: Wyeast Trappist 3787 High Gravity
@@ -186,7 +186,7 @@ Gerstenflocken: 480g
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-    16gr Pacific Gem
+    18gr Pacific Gem
 	</Info>
   </rast>
   <rast>
@@ -206,8 +206,8 @@ Gerstenflocken: 480g
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-	17g Amarillo
-	16g Cascade
+	28g Amarillo
+	14g Cascade
 	</Info>
   </rast>
   <rast>
