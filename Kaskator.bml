@@ -1,23 +1,27 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
+<recipe AppDevice="zwieselbrau.de" AppName="BrausteuerungApp" AppVersion="1.19">
   <description>Kaskator
-Ausschlagmenge:  40L
-Sudhausausbeute: 60%
+Ausschlagmenge:  20L
+Sudhausausbeute: 65%
 Stammwürze:      13% 
-Farbe:           24IBU 
-Bitterheit:       7EBC 
-Alokohol:       5,1
-Wasser: HG 33L NG 17L
+Farbe:           35IBU 
+Bitterheit:       26EBC 
+Alokohol:       5,9
+Wasser: HG 18L NG 11L
 Malz:
-Pilsener Malz (3-5 EBC): 8,81kg
-Sauermalz (2,5-12 EBC):  0,40kg
+Pilsener : 1.32kg (2,5-4,5 EBC)
+Münchner Malz: 920g (20-25 EBC)
+Cara Hell: 920g (20-30 EBC)
+Cara Red: 570g (40-60 EBC)
+Wiener Malz: 400g (6-9 EBC)
+Haferflocken: 140g
+Sauermalz: 160g (2,5-12 EBC)
 Hopfen:
-Bitter:  Tettnanger: 64 g, 3,5 a-Säure
-Flavour: Tettnanger: 45 g, 3,5 a-Säure
-Aroma:   Tettnanger: 45 g, 3,5 a-Säure
-Hefe: Saflager W-34/70
-Gärtemperatur:     12 °C
-Endvergärungsgrad: 76%
+Cascade: 160 g, 3,5 a-Säure
+davon 81g Stopfhopfen
+Hefe: US-05
+Gärtemperatur:     18 °C
+Endvergärungsgrad: 81%
 Karbonisierung:    5 g/l 
 </description>
   <rast>
@@ -26,7 +30,7 @@ Karbonisierung:    5 g/l
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>53.0</SollTemp>
+    <SollTemp>60.0</SollTemp>
     <Time>0</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
@@ -44,7 +48,7 @@ Karbonisierung:    5 g/l
     <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>48.0</SollTemp>
+    <SollTemp>57.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
@@ -55,18 +59,17 @@ Karbonisierung:    5 g/l
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
     <Info>	
-Pilsener Malz (3-5 EBC): 8,81kg
-Sauermalz (2,5-12 EBC):  0,40kg
+alle malze ohne Klumpen einruehren
 	</Info>
   </rast>
   <rast>
     <Nr>2</Nr>
-    <Name>Eiweisrast</Name>
+    <Name>Kombirast</Name>
     <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>52.0</SollTemp>
-    <Time>10</Time>
+    <SollTemp>66.5</SollTemp>
+    <Time>60</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>1.0</Kp>
@@ -76,16 +79,17 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
     <Info>
+Bei Jodnormal weiter
 	</Info>
   </rast>
   <rast>
     <Nr>3</Nr>
-    <Name>Maltoserast</Name>
+    <Name>Abmaischen</Name>
     <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>62.0</SollTemp>
-    <Time>45</Time>
+    <SollTemp>78.0</SollTemp>
+    <Time>5</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>1.0</Kp>
@@ -99,12 +103,12 @@ Sauermalz (2,5-12 EBC):  0,40kg
   </rast>
   <rast>
     <Nr>4</Nr>
-    <Name>Verzuckerungsrast</Name>
+    <Name>Laeuterruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>70.0</SollTemp>
-    <Time>45</Time>
+    <SollTemp>1.0</SollTemp>
+    <Time>20</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>0.0</Kp>
@@ -114,27 +118,26 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>	
-	Bei Jodnormal weiter
+nach der Läuterruhe Vorderwuerzehopfung 23g Cascade	in die Pfanne legen
 	</Info>
   </rast>
   <rast>
     <Nr>5</Nr>
-    <Name>Abmaischen</Name>
+    <Name>Kochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>76.0</SollTemp>
-    <Time>5</Time>
-    <MinTemp>-0.1</MinTemp>
-    <MaxTemp>0.1</MaxTemp>
+    <SollTemp>98.0</SollTemp>
+    <Time>20</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>
-	
+    <Info>	
 	</Info>
   </rast>
   <rast>
@@ -144,7 +147,7 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>15</Time>
+    <Time>50</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -154,7 +157,7 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info> 
-	Tettnanger: 64 g,
+Cascade 7g
 	</Info>
   </rast>
   <rast>
@@ -164,7 +167,7 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>75</Time>
+    <Time>20</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -174,12 +177,12 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-    Tettnanger: 45 g
+Cascade 23g
 	</Info>
   </rast>
   <rast>
     <Nr>8</Nr>
-    <Name>Arome Hopfen</Name>
+    <Name>Nachkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -194,7 +197,6 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-	Tettnanger: 45 g
 	</Info>
   </rast>
   <rast>
@@ -214,6 +216,7 @@ Sauermalz (2,5-12 EBC):  0,40kg
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
+Cascade 27g		
     </Info>
   </rast>
   <rast>
