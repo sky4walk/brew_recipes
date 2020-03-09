@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
-<recipe AppDevice="zwieselbrau.de" AppName="BrausteuerungApp" AppVersion="1.19">
+<recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
   <description>Kaskator
 Ausschlagmenge:  20L
 Sudhausausbeute: 65%
@@ -7,7 +7,7 @@ Stammwürze:      13%
 Farbe:           35IBU 
 Bitterheit:       26EBC 
 Alokohol:       5,9
-Wasser: HG 18L NG 11L
+Wasser: HG 17L NG 11L
 Malz:
 Pilsener : 1.32kg (2,5-4,5 EBC)
 Münchner Malz: 920g (20-25 EBC)
@@ -40,7 +40,7 @@ Karbonisierung:    5 g/l
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>32L Hauptguss</Info>
+    <Info>17L Hauptguss</Info>
   </rast>
   <rast>
     <Nr>1</Nr>
@@ -72,7 +72,7 @@ alle malze ohne Klumpen einruehren
     <Time>60</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -86,19 +86,20 @@ Bei Jodnormal weiter
     <Nr>3</Nr>
     <Name>Abmaischen</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>78.0</SollTemp>
     <Time>5</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>2.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
     <Info>
+Bei Jodnormal weiter
 	</Info>
   </rast>
   <rast>
@@ -142,12 +143,12 @@ nach der Läuterruhe Vorderwuerzehopfung 23g Cascade	in die Pfanne legen
   </rast>
   <rast>
     <Nr>6</Nr>
-    <Name>Bitter Hopfen</Name>
+    <Name>Bitterhopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>50</Time>
+    <Time>20</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -156,8 +157,7 @@ nach der Läuterruhe Vorderwuerzehopfung 23g Cascade	in die Pfanne legen
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> 
-Cascade 7g
+    <Info>	7g cascade
 	</Info>
   </rast>
   <rast>
