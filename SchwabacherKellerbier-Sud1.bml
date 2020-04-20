@@ -61,6 +61,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <MaxGradient>1.0</MaxGradient>
     <Info>		
 	</Info>
+  </rast>
   <rast>
     <Nr>2</Nr>
     <Name>Maltoserast</Name>
@@ -78,7 +79,6 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
     <Info>	
-
 	</Info>
   </rast>
   <rast>
