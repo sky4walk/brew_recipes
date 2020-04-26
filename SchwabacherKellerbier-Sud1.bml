@@ -88,7 +88,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>72.0</SollTemp>
-    <Time>20</Time>
+    <Time>45</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>3.0</Kp>
@@ -139,6 +139,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <Info>	
 	Am Ende Ablaeutern, Anschwaenzen und Ueberschwaenzen mit ca 17L
 	Spindelmessung
+	beim Laeutern: Vorderwürze Magnum 11% – 10g 
 	</Info>
   </rast>
   <rast>
@@ -157,13 +158,33 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>
-    Vorderwürze Magnum 11% – 10g 
+    <Info>    
+	Am Ende Spalter Select 5,2% – 10g
 	</Info>
   </rast>
   <rast>
     <Nr>7</Nr>
     <Name>Bitter Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>60</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info> 
+	Am Ende Hersbrucker 2,4% – 20g
+	</Info>
+  </rast>
+  <rast>
+    <Nr>8</Nr>
+    <Name>Aroma Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -177,40 +198,19 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> 
-	 Spalter Select 5,2% – 10g
-	</Info>
-  </rast>
-  <rast>
-    <Nr>8</Nr>
-    <Name>Aroma Hopfen</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
-    <SollTemp>98.0</SollTemp>
-    <Time>65</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
     <Info>
-    Spalter Select 5,2% – 10g – 15min
 	</Info>
   </rast>
   <rast>
     <Nr>9</Nr>
-    <Name>Nachkochen</Name>
+    <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98.0</SollTemp>
-    <Time>15</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
+    <SollTemp>1.0</SollTemp>
+    <Time>20</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
@@ -221,10 +221,10 @@ Hefe:  W34/70 80% 3 Wochen HG
   </rast>
   <rast>
     <Nr>10</Nr>
-    <Name>Whirlpool</Name>
+    <Name>Filtern</Name>
     <On>true</On>
     <Halt>true</Halt>
-    <Call>true</Call>
+    <Call>false</Call>
     <SollTemp>1.0</SollTemp>
     <Time>30</Time>
     <MinTemp>0.0</MinTemp>
@@ -240,11 +240,11 @@ Hefe:  W34/70 80% 3 Wochen HG
   </rast>
   <rast>
     <Nr>11</Nr>
-    <Name>Filtern</Name>
+    <Name>Abkuehlen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>false</Call>
-    <SollTemp>1.0</SollTemp>
+    <SollTemp>12.0</SollTemp>
     <Time>1</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
