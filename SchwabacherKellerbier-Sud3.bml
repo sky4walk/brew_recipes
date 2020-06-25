@@ -1,27 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-  <description>SChwabacher Kellerbier Sud Nr 3 
-Sudhausausbeute: 63%
-Ausschlagwürze: 20L
+  <description>Schwabacher Kellerbier Sud Nr 3 
+Sudhausausbeute: 60%
+Ausschlagwürze: 18L
 Stammwürze: 13°P
-IBU: 26
-  
-Wasser:
-13L Hauptguss
-17L Nachguss
-Malz:
-Malzmenge 4,3kg
-2,58kg (60%) PiMa EBC 2,5-4,5 
-1,74kg (40%) MüMa EBC 20-25
-129g (3%) Cara dunkel EBC 20-30
-43g (1%) Röstmalz EBC 1100-1200
-86g (2%) Sauermalz EBC 2,5-12
-Hopfen:
-Vorderwürze: Magnum 13,2% – 11g
-Bitterhopfen: Spalter Select 5% – 10g
-Aromahopfen: Hersbrucker 2,4% – 20g
-Hefe:  W34/70 80% 3 Wochen HG
-
+IBU: 30
+Hauptguss: 13L
+Nachguss: 20L
+2,46kg (60%) PiMa EBC 2,5-4,5
+1,64kg (40%) MüMa EBC 20-25
+123g (3%) Melanoidin
+130g (2%) Sauermalz EBC 2,5-12
+Vorderwürze: Magnum 13,2%–12g
+Bitterhopfen: Spalter Select 5%–10g
+Aromahopfen: Hallertauer Hersbrucker 2,4%–20g
+Hefe untergärig: W34/70 80% 2 Wochen HG Gruenschlauchen
 </description>
   <rast>
     <Nr>0</Nr>
@@ -40,7 +33,11 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-	alle Malze hinzufuegen
+2,46kg (60%) PiMa EBC 2,5-4,5
+1,64kg (40%) MüMa EBC 20-25
+123g (3%) Melanoidin
+130g (2%) Sauermalz EBC 2,5-12
+hinzufuegen
 	</Info>
   </rast>
   <rast>
@@ -59,8 +56,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>		
-	</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>2</Nr>
@@ -78,8 +74,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>	
-	</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>3</Nr>
@@ -97,9 +92,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>
-	bis Jodnormal
-	</Info>
+    <Info>bis Jodnormal</Info>
   </rast>
   <rast>
     <Nr>4</Nr>
@@ -117,12 +110,29 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>
-	</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>5</Nr>
-    <Name>Läuterruhe</Name>
+    <Name>Laeuterruhe</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>1.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>6</Nr>
+    <Name>Laeutern</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -137,12 +147,15 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>	
-	Am Ende Ablaeutern, Anschwaenzen und Ueberschwaenzen mit ca 17L
-	Spindelmessung
+	Am Ende Ablaeutern
+	Klarlaufen 2L 
+	Ueberschwaenzen mit ca 17L
+	Spindelmessung 13% 20C
+	Vorderwürze Magnum 13,2%–12g vorlegen
 	</Info>
-  </rast>
+  </rast>  
   <rast>
-    <Nr>6</Nr>
+    <Nr>7</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -157,13 +170,31 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
+    <Info></Info>
+  </rast>
+  <rast>
+    <Nr>8</Nr>
+    <Name>Spalter Hopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>60</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
     <Info>
-    Vorderwürze Magnum 11% – 10g 
+	Am Anfang: Spalter Select 5,2% – 10g
 	</Info>
   </rast>
   <rast>
-    <Nr>7</Nr>
-    <Name>Bitter Hopfen</Name>
+    <Nr>9</Nr>
+    <Name>Hersbrucker Hopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -177,38 +208,18 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> 
-	 Spalter Select 5,2% – 10g
-	</Info>
-  </rast>
-  <rast>
-    <Nr>8</Nr>
-    <Name>Aroma Hopfen</Name>
-    <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
-    <SollTemp>98.0</SollTemp>
-    <Time>65</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
     <Info>
-    Spalter Select 5,2% – 10g – 15min
+    Am Anfang: Hallertauer Hersbrucker 2,4%–20g	
 	</Info>
   </rast>
   <rast>
-    <Nr>9</Nr>
-    <Name>Nachkochen</Name>
+    <Nr>10</Nr>
+    <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98.0</SollTemp>
-    <Time>15</Time>
+    <SollTemp>85</SollTemp>
+    <Time>20</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -220,13 +231,13 @@ Hefe:  W34/70 80% 3 Wochen HG
     <Info></Info>
   </rast>
   <rast>
-    <Nr>10</Nr>
-    <Name>Whirlpool</Name>
+    <Nr>11</Nr>
+    <Name>Filtern</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>1.0</SollTemp>
-    <Time>30</Time>
+    <Time>1</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -235,14 +246,13 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>
-    </Info>
+    <Info></Info>
   </rast>
   <rast>
-    <Nr>11</Nr>
-    <Name>Filtern</Name>
-    <On>true</On>
-    <Halt>true</Halt>
+    <Nr>12</Nr>
+    <Name>-</Name>
+    <On>false</On>
+    <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>1.0</SollTemp>
     <Time>1</Time>
@@ -254,27 +264,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>
-    </Info>
-  </rast>
-  <rast>
-    <Nr>12</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info>
-	</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>13</Nr>
@@ -283,7 +273,7 @@ Hefe:  W34/70 80% 3 Wochen HG
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
+    <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
