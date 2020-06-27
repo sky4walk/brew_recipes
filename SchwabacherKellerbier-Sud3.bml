@@ -43,7 +43,7 @@ hinzufuegen
   <rast>
     <Nr>1</Nr>
     <Name>Eiweisrast</Name>
-    <On>false</On>
+    <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>57.0</SollTemp>
@@ -61,7 +61,7 @@ hinzufuegen
   <rast>
     <Nr>2</Nr>
     <Name>Maltoserast</Name>
-    <On>false</On>
+    <On>true</On>
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>62.0</SollTemp>
