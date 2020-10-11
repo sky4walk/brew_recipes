@@ -5,8 +5,8 @@ Sudhausausbeute: 60%
 Ausschlagwürze: 10L
 Stammwürze: 12°P
 IBU: 19
-Hauptguss: 7L
-Nachguss: 9L
+Hauptguss: 8L
+Nachguss: 8L
 1,62kg (72%) PiMa EBC 2-4
 0,44kg (20%) CaraHell EBC 20-30
 0,14kg (6%)  CaraMuench EBC 110-130
@@ -16,6 +16,7 @@ Bitterhopfen: Perle 10%–7g
 Aromahopfen: Hallertauer Mittelfrueh 3,2%–14g
 Lebkuchengewuerz: 4g
 Hefe untergärig: Safale S04 75% 15-20°C
+Beginn der Hauptgaerung nochmal den das Lebkuchengewuerz im Gewuerzbeutel reinhaengen
 </description>
   <rast>
     <Nr>0</Nr>
@@ -138,7 +139,7 @@ hinzufuegen
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>1.0</SollTemp>
-    <Time>10</Time>
+    <Time>1</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -153,7 +154,7 @@ hinzufuegen
 	Ueberschwaenzen mit ca 9L
 	Spindelmessung 12% 20C
 	</Info>
-  </rast>  
+  </rast>
   <rast>
     <Nr>7</Nr>
     <Name>Aufkochen</Name>
@@ -179,7 +180,7 @@ hinzufuegen
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>15</Time>
+    <Time>45</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -199,7 +200,7 @@ hinzufuegen
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>60</Time>
+    <Time>10</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -218,8 +219,8 @@ hinzufuegen
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98</SollTemp>
-    <Time>20</Time>
+    <SollTemp>98.0</SollTemp>
+    <Time>5</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -230,7 +231,7 @@ hinzufuegen
     <MaxGradient>0.0</MaxGradient>
     <Info>
 	14g Hallertauer Mittelfrueh am Anfang dazu
-	Lebkuchengewuerz wieder entnehmen
+	Lebkuchengewuerz wieder entnehmen Am Anfang
 	</Info>
   </rast>
   <rast>
@@ -239,7 +240,7 @@ hinzufuegen
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>85</SollTemp>
+    <SollTemp>85.0</SollTemp>
     <Time>10</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
