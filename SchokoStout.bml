@@ -1,6 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-  <description></description>
+  <description>
+1,8kg Maris Otter 
+0,18kg Pale Chocolate Malz 
+0,09kg Cara Münch 
+0,06kg Röstgerste unvermälzt
+0,6kg Haferflocken
+11g 8,6% Northern Brewer
+6g 6% Brewers Gold
+287g Milchzucker/Lactose
+  </description>
   <rast>
     <Nr>0</Nr>
     <Name>Einmaischen</Name>
@@ -44,7 +53,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>72.0</SollTemp>
-    <Time>300</Time>
+    <Time>30</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.1</MaxTemp>
     <Kp>1.0</Kp>
@@ -134,7 +143,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>57</Time>
+    <Time>55</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -152,7 +161,7 @@
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>3</Time>
+    <Time>5</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -161,7 +170,7 @@
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Am Anfang brewers gold 6g</Info>
+    <Info>Am Anfang brewers gold 6g und Milchzucker</Info>
   </rast>
   <rast>
     <Nr>9</Nr>
