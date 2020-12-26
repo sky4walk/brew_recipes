@@ -170,9 +170,9 @@ Hefe untergärig:  Wayeast 2308 75% 15-20°C
   <rast>
     <Nr>8</Nr>
     <Name>BitterHopfen</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>98.0</SollTemp>
     <Time>0</Time>
     <MinTemp>2.0</MinTemp>
