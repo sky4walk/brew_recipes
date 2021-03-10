@@ -20,7 +20,7 @@ Tettnanger 4,4%  14g
 Magnum 13,7% 10g
 Saazer 4,3% 15g
 
-0,1g NaCl
+0,5g NaCl
 
 Hefe untergärig:  Wayeast 22206 Bavarian Lager 77% 10-13°C
 </description>
@@ -30,7 +30,7 @@ Hefe untergärig:  Wayeast 22206 Bavarian Lager 77% 10-13°C
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>64.0</SollTemp>
+    <SollTemp>63.0</SollTemp>
     <Time>1</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.0</MaxTemp>
@@ -266,7 +266,6 @@ Hefe untergärig:  Wayeast 22206 Bavarian Lager 77% 10-13°C
     <MaxGradient>0.0</MaxGradient>
     <Info></Info>
   </rast>
-    Sinamar 20ml dazu
   <rast>
     <Nr>13</Nr>
     <Name>-</Name>
