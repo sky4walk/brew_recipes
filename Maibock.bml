@@ -30,10 +30,10 @@ Hefe untergärig:  Wayeast 22206 Bavarian Lager 77% 10-13°C
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>63.0</SollTemp>
+    <SollTemp>60.0</SollTemp>
     <Time>1</Time>
     <MinTemp>-0.1</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
+    <MaxTemp>0.1</MaxTemp>
     <Kp>1.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
@@ -156,8 +156,8 @@ Hefe untergärig:  Wayeast 22206 Bavarian Lager 77% 10-13°C
     <Nr>7</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>98.0</SollTemp>
     <Time>1</Time>
     <MinTemp>2.0</MinTemp>
