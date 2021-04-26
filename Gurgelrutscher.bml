@@ -7,13 +7,13 @@ Stammwürze: 11%
 IBU: 21
 EBC: 8
 Alk.: %
+
 Karbonisierung: 5g/l
-Wasser:4 dH
-NaCl 10mg/l
-Braugips 1mg/l
+Wasser:5 dH
+NaCl: 3g
 Hauptguss: 36L
-Nachguss: 38L
-Malz Gesamt 5,2kg
+Nachguss: 32L
+
 7,78kg (81,27%) Pale Ale
 0,8kg (8,36%) Weizen
 0,68kg (7,1%) Cara Pils
@@ -23,8 +23,8 @@ Dr Rudi 27g
 Mandarina Bavaria 30g
 
 Hefe untergärig:  
-Godzwana Alt 9 
-Wizgal UG
+25L Godzwana Alt 9 
+25L WYeast 2209
 
 </description>
   <rast>
@@ -42,7 +42,7 @@ Wizgal UG
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>1.0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>Alle Malze hinzufuegen ausser Sinamar
 	</Info>
   </rast>
