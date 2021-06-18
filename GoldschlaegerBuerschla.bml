@@ -14,13 +14,13 @@ NaCl: 3g
 Hauptguss: 36L
 Nachguss: 32L
 
-7,8kg (81,27%) Pale Ale
-0,7kg (7,1%) Cara Pils
-0,45kg  (3,26%) Sauermalz
+7,8kg  (81,27%) Pale Ale
+0,7kg  (7,1%) Cara Pils
+0,45kg (3,26%) Sauermalz
 
-Herkules 15,2% 15g
-Tradition 5,8% 30g 
-Spalter Select 4,8% 30g
+Herkules 15,2% 15g 60Min
+Tradition 5,8% 30g 40min
+Spalter Select 4,8% 30g 10Min 
 
 Hefe untergärig:  
 25L Saflager S23 70g - 23C +/- 3C Wuerze rehydrieren 700ml, 10C 
@@ -171,7 +171,7 @@ Hefe untergärig:
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Bei Alarm Mittelfrueh dazu</Info>
+    <Info>Bei Alarm 15g Herkules dazu</Info>
   </rast>
   <rast>
     <Nr>8</Nr>
@@ -180,7 +180,7 @@ Hefe untergärig:
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>60</Time>
+    <Time>20</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -189,7 +189,7 @@ Hefe untergärig:
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> Bei Alarm Tettnanger dazu
+    <Info> Bei Alarm 30g Tradition dazu
 	</Info>
   </rast>
   <rast>
@@ -199,7 +199,7 @@ Hefe untergärig:
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>10</Time>
+    <Time>30</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -209,7 +209,7 @@ Hefe untergärig:
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-    Bei Alarm Saazer dazu
+    Bei Alarm Select dazu
 	</Info>
   </rast>
   <rast>
