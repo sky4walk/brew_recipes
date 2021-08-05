@@ -47,8 +47,8 @@ WLP800 9°C
     <Nr>1</Nr>
     <Name>Eiweisrast</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>55.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
@@ -65,8 +65,8 @@ WLP800 9°C
     <Nr>2</Nr>
     <Name>Maltoserast</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>62.0</SollTemp>
     <Time>40</Time>
     <MinTemp>-0.1</MinTemp>
@@ -117,7 +117,8 @@ WLP800 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info></Info>
+    <Info>Motor aus
+    Laeuterbottich umfüllen</Info>
   </rast>
   <rast>
     <Nr>5</Nr>
