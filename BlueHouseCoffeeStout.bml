@@ -44,7 +44,7 @@ Saflager S-04
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Alle Malze hinzufuegen ausser Sauermalz
+    <Info>Alle Malze hinzufuegen ausser Sauermalz und Roestmalz
 	</Info>
   </rast>
   <rast>
@@ -101,6 +101,7 @@ Saflager S-04
     <MaxGradient>1.0</MaxGradient>
     <Info>bis Jodnormal</Info>
   </rast>
+  kurz vor Ende das Roestmalz dazu gegeben
   <rast>
     <Nr>4</Nr>
     <Name>Abmaischen</Name>
