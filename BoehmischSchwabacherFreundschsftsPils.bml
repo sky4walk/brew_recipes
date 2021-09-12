@@ -24,8 +24,27 @@ Hefe untergärig:
 WLP800 9°C
 
 </description>
-  <rast>
+<rast>
     <Nr>0</Nr>
+    <Name>Aufheizen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>35.0</SollTemp>
+    <Time>1</Time>
+    <MinTemp>-0.1</MinTemp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>Boehmisches Pilsner Malz und Cara Amber hinzufuegen
+	</Info>
+  </rast>
+  <rast>
+    <Nr>1</Nr>
     <Name>Einmaischen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -44,7 +63,7 @@ WLP800 9°C
 	</Info>
   </rast>
   <rast>
-    <Nr>1</Nr>
+    <Nr>2</Nr>
     <Name>Eiweisrast</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -62,7 +81,7 @@ WLP800 9°C
     <Info>Sauermalz hinzufuegen</Info>
   </rast>
   <rast>
-    <Nr>2</Nr>
+    <Nr>3</Nr>
     <Name>Maltoserast</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -82,7 +101,7 @@ WLP800 9°C
     </Info>
   </rast>
   <rast>
-    <Nr>3</Nr>
+    <Nr>4</Nr>
     <Name>Verzuckerung</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -102,7 +121,7 @@ WLP800 9°C
     Jodnormal</Info>
   </rast>
   <rast>
-    <Nr>4</Nr>
+    <Nr>5</Nr>
     <Name>Abmaischen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -121,7 +140,7 @@ WLP800 9°C
     Laeuterbottich umfüllen</Info>
   </rast>
   <rast>
-    <Nr>5</Nr>
+    <Nr>6</Nr>
     <Name>Laeuterruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -139,7 +158,7 @@ WLP800 9°C
     <Info></Info>
   </rast>
   <rast>
-    <Nr>6</Nr>
+    <Nr>7</Nr>
     <Name>Laeutern</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -159,7 +178,7 @@ WLP800 9°C
 	</Info>
   </rast>
   <rast>
-    <Nr>7</Nr>
+    <Nr>8</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -177,7 +196,7 @@ WLP800 9°C
     <Info>Bei Alarm 44g Saazer dazu</Info>
   </rast>
   <rast>
-    <Nr>8</Nr>
+    <Nr>9</Nr>
     <Name>BitterHopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -196,7 +215,7 @@ WLP800 9°C
 	</Info>
   </rast>
   <rast>
-    <Nr>9</Nr>
+    <Nr>10</Nr>
     <Name>Flavourhopfen</Name>
     <On>false</On>
     <Halt>true</Halt>
@@ -216,7 +235,7 @@ WLP800 9°C
 	</Info>
   </rast>
   <rast>
-    <Nr>10</Nr>
+    <Nr>11</Nr>
     <Name>Aromahopfen</Name>
     <On>false</On>
     <Halt>true</Halt>
@@ -235,7 +254,7 @@ WLP800 9°C
 	</Info>
   </rast>
   <rast>
-    <Nr>11</Nr>
+    <Nr>12</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -253,29 +272,11 @@ WLP800 9°C
     <Info></Info>
   </rast>
   <rast>
-    <Nr>12</Nr>
+    <Nr>13</Nr>
     <Name>Filtern</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1.0</SollTemp>
-    <Time>1</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
-  </rast>
-  <rast>
-    <Nr>13</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
     <SollTemp>1.0</SollTemp>
     <Time>1</Time>
     <MinTemp>0.0</MinTemp>
@@ -294,8 +295,8 @@ WLP800 9°C
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
+    <SollTemp>1.0</SollTemp>
+    <Time>1</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -313,7 +314,7 @@ WLP800 9°C
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>0.0</SollTemp>
-    <Time>0</Time>
+    <Time>10</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
