@@ -211,7 +211,7 @@ WLP800 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> Bei Alarm 30g Tradition dazu
+    <Info> 
 	</Info>
   </rast>
   <rast>
@@ -231,7 +231,6 @@ WLP800 9°C
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
-    Bei Alarm Select dazu
 	</Info>
   </rast>
   <rast>
