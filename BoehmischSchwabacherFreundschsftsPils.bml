@@ -66,8 +66,8 @@ WLP800 9°C
     <Nr>2</Nr>
     <Name>Eiweisrast</Name>
     <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>55.0</SollTemp>
     <Time>10</Time>
     <MinTemp>-0.1</MinTemp>
