@@ -179,8 +179,8 @@ Saflager S34/70
     <Nr>8</Nr>
     <Name>Aufkochen</Name>
     <On>true</On>
-    <Halt>true</Halt>
-    <Call>true</Call>
+    <Halt>false</Halt>
+    <Call>false</Call>
     <SollTemp>98.0</SollTemp>
     <Time>1</Time>
     <MinTemp>2.0</MinTemp>
@@ -191,16 +191,16 @@ Saflager S34/70
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Bei Alarm 40g Magnum 15,3% Alpha dazu</Info>
+    <Info></Info>
   </rast>
   <rast>
     <Nr>9</Nr>
-    <Name>kochen</Name>
+    <Name>Bitterhopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>90</Time>
+    <Time>30</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -209,15 +209,16 @@ Saflager S34/70
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> 
+    <Info>
+Bei Alarm 20g Mandarina Bavaria dazu    
 	</Info>
   </rast>
   <rast>
     <Nr>10</Nr>
     <Name>Flavourhopfen</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>98.0</SollTemp>
     <Time>30</Time>
     <MinTemp>2.0</MinTemp>
@@ -229,16 +230,17 @@ Saflager S34/70
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>    
+    Bei Alarm 20g Mandarina Bavaria dazu    
 	</Info>
   </rast>
   <rast>
     <Nr>11</Nr>
     <Name>Aromahopfen</Name>
-    <On>false</On>
+    <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>10</Time>
+    <Time>20</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -248,11 +250,12 @@ Saflager S34/70
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
     <Info>
+    Bei Alarm 20g Mandarina Bavaria dazu    
 	</Info>
   </rast>
   <rast>
     <Nr>12</Nr>
-    <Name>Whirlpool</Name>
+    <Name>Nachkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -270,14 +273,14 @@ Saflager S34/70
   </rast>
   <rast>
     <Nr>13</Nr>
-    <Name>Filtern</Name>
+    <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>1.0</SollTemp>
-    <Time>1</Time>
-    <MinTemp>0.0</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
+    <SollTemp>85.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
@@ -288,10 +291,10 @@ Saflager S34/70
   </rast>
   <rast>
     <Nr>14</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Name>Filtern</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>1.0</SollTemp>
     <Time>1</Time>
     <MinTemp>0.0</MinTemp>
@@ -310,8 +313,8 @@ Saflager S34/70
     <On>false</On>
     <Halt>false</Halt>
     <Call>false</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>10</Time>
+    <SollTemp>1.0</SollTemp>
+    <Time>1</Time>
     <MinTemp>0.0</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
