@@ -132,8 +132,8 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <Nr>6</Nr>
     <Name>Laeutern</Name>
     <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>1.0</SollTemp>
     <Time>1</Time>
     <MinTemp>0.0</MinTemp>
