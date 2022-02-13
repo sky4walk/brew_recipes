@@ -29,12 +29,12 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <Time>1</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.0</MaxTemp>
-    <Kp>1.0</Kp>
+    <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>1.0</MaxGradient>
+    <MaxGradient>0.0</MaxGradient>
     <Info>Alle Malze hinzufuegen ausser sauermalz
 	</Info>
   </rast>
