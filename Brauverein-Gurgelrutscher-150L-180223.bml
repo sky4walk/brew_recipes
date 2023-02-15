@@ -1,20 +1,30 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <recipe AppDevice="mikroSikaru.de" AppName="BrausteuerungApp" AppVersion="1.19">
-  <description>Brauverein Schwabach Frankenlager 
+  <description>Gurgelrutscher
 Sudhausausbeute: 65%
-Ausschlagwürze: 100L
-Stammwürze: 13%P
-IBU: 22
-EBC: 10
-Alk.: 5.4%
-Hauptguss: 87L
-Nachguss: 45L
-13,67kg Fraenkische Landgerste
+Ausschlagwürze: 150L
+Stammwürze: 11%
+IBU: 21
+EBC: 8
+Alk.: %
 
-Vorderwuerze: Hallertauer Mittelfrueh 3,5% 258g
-Flavourhopfen: Hallertauer Mittelfrueh 3,5% 33g 
-Aromahopfen: Hallertauer Mittelfrueh 3,5% 33g
-Hefe untergärig:  W-34/70 anstellen bei 9°C
+Karbonisierung: 5g/l
+Wasser:5 dH
+Hauptguss: 120L (42cm Maischepfanne)
+Nachguss: 90L (38cm Nachgusstopf)
+
+23,4kg (81,27%) Pale Ale
+2,4kg (8,36%) Weizen
+2,1kg (7,1%) Cara Pils
+1,0kg  (3,26%) Haferflocken
+= 30 kg
+
+Chinook 12,3% 100g
+Hallertau Mandarina Bavaria 11,4% 100g
+
+Hefe untergärig:  
+Schanzenbraeu Hefe
+
 </description>
   <rast>
     <Nr>0</Nr>
@@ -22,11 +32,11 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>37.0</SollTemp>
+    <SollTemp>57.0</SollTemp>
     <Time>1</Time>
     <MinTemp>-0.1</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>0.0</Kp>
+    <MaxTemp>0.1</MaxTemp>
+    <Kp>1.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
@@ -60,7 +70,7 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <Halt>false</Halt>
     <Call>false</Call>
     <SollTemp>64.0</SollTemp>
-    <Time>15</Time>
+    <Time>35</Time>
     <MinTemp>-0.1</MinTemp>
     <MaxTemp>0.0</MaxTemp>
     <Kp>1.0</Kp>
@@ -73,28 +83,10 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
   </rast>
   <rast>
     <Nr>3</Nr>
-    <Name>Narzissrast</Name>
+    <Name>Verzuckerung</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>72.0</SollTemp>
-    <Time>10</Time>
-    <MinTemp>-0.1</MinTemp>
-    <MaxTemp>0.0</MaxTemp>
-    <Kp>1.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>1.0</MaxGradient>
-    <Info>1/3 Dickmaische abziehen, fuer 10Min bei 72C 10min, dann kochen 10min. Diese Rast weiterlaufen lassen. Erst weiterschalten, nachdem die kochende DIckmaische wieder dazugegeben wurde</Info>
-  </rast>
-  <rast>
-    <Nr>4</Nr>
-    <Name>Verzuckerungsrast</Name>
-    <On>true</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
     <SollTemp>72.0</SollTemp>
     <Time>20</Time>
     <MinTemp>-0.1</MinTemp>
@@ -105,10 +97,10 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>1.0</MaxGradient>
-    <Info>Dickmaische zugeben am Anfang. Sollte die Mischtemperatur auf 72C bringen</Info>
+    <Info>bis Jodnormal</Info>
   </rast>
   <rast>
-    <Nr>5</Nr>
+    <Nr>4</Nr>
     <Name>Abmaischen</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -126,7 +118,7 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <Info></Info>
   </rast>
   <rast>
-    <Nr>6</Nr>
+    <Nr>5</Nr>
     <Name>Laeuterruhe</Name>
     <On>true</On>
     <Halt>true</Halt>
@@ -141,30 +133,30 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info> Laeuterruhe und Laeutern. Danach weiter. Vorderwuerze Hallertauer Mittelfrueh  3,5alpha 258g
-	</Info>
+    <Info></Info>
   </rast>
   <rast>
-    <Nr>7</Nr>
-    <Name>Aufkochen</Name>
+    <Nr>6</Nr>
+    <Name>Laeutern</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>98.0</SollTemp>
-    <Time>45</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
+    <SollTemp>1.0</SollTemp>
+    <Time>1</Time>
+    <MinTemp>0.0</MinTemp>
+    <MaxTemp>0.0</MaxTemp>
     <Kp>0.0</Kp>
     <Ki>0.0</Ki>
     <Kd>0.0</Kd>
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Am Ende Hallertauer Mittelfrueh 3,5alpha 33g</Info>
-  </rast>   
+    <Info>	
+	</Info>
+  </rast>
   <rast>
-    <Nr>8</Nr>
-    <Name>Flavourhopfen</Name>
+    <Nr>7</Nr>
+    <Name>Aufkochen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
@@ -178,16 +170,55 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info>Am Ende Hallertauer Mittelfrueh 3,5alpha 33g</Info>
+    <Info>Am Ende Chinook 100g dazu</Info>
+  </rast>
+  <rast>
+    <Nr>8</Nr>
+    <Name>BitterHopfen</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>60</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info> 
+    Am End Mandarina Bavaria 100g dazu
+	</Info>
   </rast>
   <rast>
     <Nr>9</Nr>
+    <Name>Flavourhopfen</Name>
+    <On>false</On>
+    <Halt>false</Halt>
+    <Call>false</Call>
+    <SollTemp>98.0</SollTemp>
+    <Time>10</Time>
+    <MinTemp>2.0</MinTemp>
+    <MaxTemp>5.0</MaxTemp>
+    <Kp>0.0</Kp>
+    <Ki>0.0</Ki>
+    <Kd>0.0</Kd>
+    <OnTimePulse>0</OnTimePulse>
+    <OffTimePulse>0</OffTimePulse>
+    <MaxGradient>0.0</MaxGradient>
+    <Info>
+	</Info>
+  </rast>
+  <rast>
+    <Nr>10</Nr>
     <Name>Aromahopfen</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
     <SollTemp>98.0</SollTemp>
-    <Time>5</Time>
+    <Time>10</Time>
     <MinTemp>2.0</MinTemp>
     <MaxTemp>5.0</MaxTemp>
     <Kp>0.0</Kp>
@@ -196,32 +227,15 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
     <OnTimePulse>0</OnTimePulse>
     <OffTimePulse>0</OffTimePulse>
     <MaxGradient>0.0</MaxGradient>
-    <Info></Info>
+    <Info>
+	</Info>
   </rast>
   <rast>
-    <Nr>10</Nr>
+    <Nr>11</Nr>
     <Name>Whirlpool</Name>
     <On>true</On>
     <Halt>true</Halt>
     <Call>true</Call>
-    <SollTemp>0.0</SollTemp>
-    <Time>15</Time>
-    <MinTemp>2.0</MinTemp>
-    <MaxTemp>5.0</MaxTemp>
-    <Kp>0.0</Kp>
-    <Ki>0.0</Ki>
-    <Kd>0.0</Kd>
-    <OnTimePulse>0</OnTimePulse>
-    <OffTimePulse>0</OffTimePulse>
-    <MaxGradient>0.0</MaxGradient>
-    <Info>Whirlpool starten</Info>
-  </rast>
-  <rast>
-    <Nr>11</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
     <SollTemp>85.0</SollTemp>
     <Time>10</Time>
     <MinTemp>2.0</MinTemp>
@@ -236,10 +250,10 @@ Hefe untergärig:  W-34/70 anstellen bei 9°C
   </rast>
   <rast>
     <Nr>12</Nr>
-    <Name>-</Name>
-    <On>false</On>
-    <Halt>false</Halt>
-    <Call>false</Call>
+    <Name>Filtern</Name>
+    <On>true</On>
+    <Halt>true</Halt>
+    <Call>true</Call>
     <SollTemp>1.0</SollTemp>
     <Time>1</Time>
     <MinTemp>0.0</MinTemp>
